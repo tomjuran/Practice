@@ -7,7 +7,7 @@ class Save extends Component {
         messages: []
       }
     }
-    // add handleChange() and submitMessage() methods here
+   
     handleChange(event){
       this.setState({
         input: event.target.value,
@@ -26,7 +26,7 @@ class Save extends Component {
       return (
         <div>
           <h2>Type in a new Message:</h2>
-          { /* render an input, button, and ul here */ }
+         
           <input onChange={this.handleChange.bind(this)} value={this.state.input}/>
           <button onClick={this.submitMessage.bind(this)}>Submit</button>
           <ul>
@@ -34,7 +34,7 @@ class Save extends Component {
               return <li key={i}>{x}</li>
             })}
           </ul>
-          { /* change code above this line */ }
+         
         </div>
       );
     }
